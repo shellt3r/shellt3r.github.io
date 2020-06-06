@@ -58,6 +58,7 @@ _dump() {
   echo "-" >> "$OUTPUT_DIR/$OUTPUT_FILE"
   echo "  filename: '$1'" >> "$OUTPUT_DIR/$OUTPUT_FILE"
   echo "  lastmod: '$_lasmod'" >> "$OUTPUT_DIR/$OUTPUT_FILE"
+  echo "Works"
 }
 
 
