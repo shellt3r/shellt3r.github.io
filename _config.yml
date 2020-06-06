@@ -13,15 +13,14 @@ title: SHELLT3R                          # the main title
 tagline: A cool content blog made by a guy who loves hacking.  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A cool blog about tools and technics
-  to develope your own pentest methodology.
+  A cool content blog made by a guy who loves hacking.
 
 # Replace with the website url, e.g. 'https://username.github.io'
 url: 'https://shellt3r.github.io'
 
 author: Guilherme Almeida                  # change to your full name
 
-avatar: /assets/img/sample/avatar_new.jpg   # support internet resources
+avatar: /assets/img/sample/avatar.jpg   # support internet resources
 
 github:
   username: shellt3r             # change to your github username
@@ -29,10 +28,9 @@ github:
 twitter:
   username: shellt3r            # change to your twitter username
 
-
 social:
   name: Guilherme Almeida                  # it will shows as the copyright owner in Footer
-  #email: shellt3r@outlook.com.br             # change to your email address
+  email: shellt3r@protonmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/shellt3r      # change to your twitter homepage
@@ -40,24 +38,24 @@ social:
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     - https://www.linkedin.com/in/shellt3r
-    - https://www.instagram.com/shellt3r.sh
+    - https://instagram.com/shellt3r.sh
 
 google_site_verification: google_meta_tag_verification # change to your verification string
 
 #--------------------------
 
-# if your site type is Project Pages site, change below value to '/projectname'
+
+# Only if your site type is GitHub Project sites and doesn't have a custom domain,
+# change below value to '/projectname'.
 baseurl: ''
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
 timezone: America/Sao_Paulo
 
 google_analytics:
-  # Fill with your Google Analytics ID
-  id: ''
-  # The Google Analytics pageviews switch.
-
+  id: ''          # Fill with your Google Analytics ID
   pv:
+    # The Google Analytics pageviews switch.
     # DO NOT enable it unless you know how to deploy the Google Analytics superProxy.
     enabled: false
     # the next options only valid when `google_analytics.pv` is enabled.
@@ -66,9 +64,8 @@ google_analytics:
     cache: false  # pv data local cache, good for the users from GFW area.
 
 disqus:
-  comments: true  # boolean type, the global switch for posts comments.
+  comments: false  # boolean type, the global switch for posts comments.
   shortname: ''    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-
 
 # Prefer color scheme setting, available values:
 #
@@ -102,6 +99,8 @@ kramdown:
       line_numbers: true
       start_line: 1
 
+# DO NOT change this unless you're a Pro user on Jekyll and Web development,
+# or you think you're smart enough to change other relevant URLs within this template.
 permalink: /posts/:title/
 
 defaults:
@@ -159,11 +158,6 @@ defaults:
         -
           label: Home
           url: /
-  -
-    scope:
-      path: assets/data
-    values:
-      layout: compress
 
 
 sass:
@@ -182,7 +176,7 @@ compress_html:
     envs: []
 
 exclude:
-  - vendor        # Avoid Jekyll mistakenly read the vender directory on Travis-CI's VM .
+  - vendor        # Avoid Jekyll mistakenly read the vendor directory on Travis-CI's VM .
   - Gemfile.lock
   - Gemfile
   - tools
@@ -198,7 +192,7 @@ sitemap_exclude:  # Sitemap will exclude the following items.
     - /categories/
     - /tags/
     - /posts/
-#    - 404.html
+    - 404.html
     - feed.xml
     - sitemap.xml
     - robots.txt
